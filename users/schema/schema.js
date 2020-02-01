@@ -1,4 +1,4 @@
-const graphql = require("graphql");
+import graphql from "graphql";
 const { GraphQLObjectType, GraphQLSchema, GraphQLString, GraphQLInt } = graphql;
 
 // hard coded data
@@ -29,6 +29,6 @@ const RootQuery = new GraphQLObjectType({
   }
 });
 
-module.exports = new GraphQLSchema({
+export default new GraphQLSchema({
   query: RootQuery
 });
